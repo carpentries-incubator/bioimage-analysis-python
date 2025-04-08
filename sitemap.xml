@@ -1,138 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/01-introduction.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/01-introduction.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/02-image-basics.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/02-image-basics.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/03-skimage-images.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/03-skimage-images.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/04-drawing.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/04-drawing.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/05-creating-histograms.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/05-creating-histograms.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/06-blurring.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/06-blurring.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/07-thresholding.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/07-thresholding.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/08-connected-components.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/08-connected-components.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/09-challenges.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/09-challenges.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/404.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/404.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/CODE_OF_CONDUCT.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/LICENSE.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/aio.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/aio.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/discuss.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/discuss.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/edge-detection.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/edge-detection.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/files/cheatsheet.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/files/cheatsheet.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/images.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/images.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/index.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/index.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/01-introduction.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/01-introduction.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/02-image-basics.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/02-image-basics.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/03-skimage-images.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/03-skimage-images.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/04-drawing.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/04-drawing.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/05-creating-histograms.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/05-creating-histograms.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/06-blurring.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/06-blurring.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/07-thresholding.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/07-thresholding.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/08-connected-components.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/08-connected-components.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/09-challenges.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/09-challenges.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/404.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/404.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/CODE_OF_CONDUCT.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/LICENSE.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/aio.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/aio.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/discuss.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/discuss.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/edge-detection.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/edge-detection.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/images.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/images.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/index.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/index.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/instructor-notes.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/instructor-notes.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/key-points.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/key-points.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/prereqs.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/prereqs.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/profiles.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/profiles.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor/reference.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/reference.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/instructor-notes.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor-notes.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/key-points.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/key-points.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/prereqs.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/prereqs.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/profiles.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/profiles.html</loc>
   </url>
   <url>
-    <loc>https://datacarpentry.github.io/image-processing/reference.html</loc>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/reference.html</loc>
   </url>
 </urlset>
