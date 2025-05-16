@@ -6,7 +6,9 @@ This is lesson is **currently under heavy development**. Keep an eye of the [Iss
 
 ## Lesson Content
 
-The lesson content is still being developed. See [CodiMD document](https://codimd.carpentries.org/_XWgpty6Q06VpTmBUA4CWw?edit) to see current ideas.
+The lesson content is still being developed. 
+
+See the [CodiMD document](https://codimd.carpentries.org/_XWgpty6Q06VpTmBUA4CWw?edit) written together in our first in-person workshop to see current ideas.
 
 ## Contribution
 
