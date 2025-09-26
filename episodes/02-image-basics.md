@@ -6,23 +6,26 @@ exercises: 5
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Define the terms bit, byte, kilobyte, megabyte, etc.
-- Explain how a digital image is composed of pixels.
-- Recommend using imageio (resp. scikit-image) for I/O (resp. image processing) tasks.
-- Explain how images are stored in NumPy arrays.
-- Explain the left-hand coordinate system used in digital images.
-- Explain the RGB additive colour model used in digital images.
-- Explain the order of the three colour values in scikit-image images.
-- Explain the characteristics of the BMP, JPEG, and TIFF image formats.
-- Explain the difference between lossy and lossless compression.
-- Explain the advantages and disadvantages of compressed image formats.
-- Explain what information could be contained in image metadata.
+- Describe the main differences between typical fluorescence bioimages and scientific (like histological staining) and non-scientific (like camera pictures) RGB images.
+- Explain how some aspects of image origin and formation can influence downstream analysis.
+
+- Load images into Python represented as n-dimensional arrays via BioIO
+- Display pixel values from a NumPy array
+- Extract and interpret an image's shape
+- Find an image's min, max, and mean pixel value
+
+- Explain the significance of bit depth in images and how it affects image quality and memory footprint
+- Explain how bit depth and data type (dtype) determine the range of valid pixel values in an image.
+  - Provide examples of valid values for different NumPy array data type.
+  - Explain the link between bit depth, data type and possible values present in an image
+  - Present examples of bit depth, data type, shape and values for common bioimages.
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- How are images represented in digital format?
+- Question 1
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -934,11 +937,11 @@ along with another image, `tree.jpg`.
 We can apply lossless compression to any file by using the `zip` command.
 Recall that the `ws.bmp` file contains 75,000,054 bytes.
 Apply lossless compression to this image by executing the following command:
-`zip ws.zip ws.bmp` 
+`zip ws.zip ws.bmp`
 (`Compress-Archive ws.bmp ws.zip` with PowerShell).
 This command tells the computer to create a new compressed file,
 `ws.zip`, from the original bitmap image.
-Execute a similar command on the tree JPEG file: `zip tree.zip tree.jpg` 
+Execute a similar command on the tree JPEG file: `zip tree.zip tree.jpg`
 (`Compress-Archive tree.jpg tree.zip` with PowerShell).
 
 Having created the compressed file,

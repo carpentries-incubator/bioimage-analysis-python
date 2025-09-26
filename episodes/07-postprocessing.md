@@ -1,22 +1,18 @@
 ---
-title: Connected Component Analysis
+title: Post-processing with filters
 teaching: 70
 exercises: 55
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Understand the term object in the context of images.
-- Learn about pixel connectivity.
-- Learn how Connected Component Analysis (CCA) works.
-- Use CCA to produce an image that highlights every object in a different colour.
-- Characterise each object with numbers that describe its appearance.
+- Utilize post-processing filters such as watershed, fill holes, opening/closing techniques, and removing objects touching image borders to improve objects segmentation for later measurements
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- How to extract separate objects from an image and describe these objects quantitatively.
+- Question 1
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -357,7 +353,7 @@ Those are really big numbers.
 From this available space we only use the range from `0` to `11`.
 When showing this image in the viewer,
 it may squeeze the complete range into 256 gray values.
-Therefore, the range of our numbers does not produce any visible variation. One way to rectify this 
+Therefore, the range of our numbers does not produce any visible variation. One way to rectify this
 is to explicitly specify the data range we want the colormap to cover:
 
 ```python
@@ -365,7 +361,7 @@ fig, ax = plt.subplots()
 ax.imshow(labeled_image, vmin=np.min(labeled_image), vmax=np.max(labeled_image))
 ```
 
-Note this is the default behaviour for newer versions of `matplotlib.pyplot.imshow`. 
+Note this is the default behaviour for newer versions of `matplotlib.pyplot.imshow`.
 Alternatively we could convert the image to RGB and then display it.
 
 
@@ -376,7 +372,7 @@ Alternatively we could convert the image to RGB and then display it.
 ## Suppressing outputs in Jupyter Notebooks
 
 We just used `ax.set_axis_off();` to hide the axis from the image for a visually cleaner figure. The
-semicolon is added to supress the output(s) of the statement, in this [case](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axis.html) 
+semicolon is added to supress the output(s) of the statement, in this [case](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axis.html)
 the axis limits. This is specific to Jupyter Notebooks.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

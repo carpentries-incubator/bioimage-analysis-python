@@ -1,22 +1,22 @@
 ---
-title: Working with scikit-image
+title: Reading Images
 teaching: 70
 exercises: 50
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Read and save images with imageio.
-- Display images with Matplotlib.
-- Resize images with scikit-image.
-- Perform simple image thresholding with NumPy array operations.
-- Extract sub-images using array slicing.
+- Find relevant documentation to load different proprietary file formats.
+- Identify common proprietary microscopy file formats and understand how tools like BioIO support working with these formats.
+- Extract relevant information from image metadata (channel names, stage positions, time frames…).
+- Extract physical units from image metadata (ZYX and time) with BioIO.
+- Manually estimate the size of an object in a bioimage in pixel size and physical units.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- How can the scikit-image Python computer vision library be used to work with images?
+- Question 1
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -191,7 +191,7 @@ Images may appear the same size in jupyter,
 but you can see the size difference by comparing the scales for each.
 You can also see the difference in file storage size on disk by
 hovering your mouse cursor over the original
-and the new files in the Jupyter file browser, using `ls -l` in your shell 
+and the new files in the Jupyter file browser, using `ls -l` in your shell
 (`dir` with Windows PowerShell), or viewing file sizes in the OS file browser if it is configured so.
 
 :::::::::::::::  solution
@@ -381,7 +381,7 @@ The file `data/sudoku.png` is an RGB image of a sudoku puzzle:
 
 ![](data/sudoku.png){alt='Su-Do-Ku puzzle'}
 
-Your task is to load the image in grayscale format and turn all of 
+Your task is to load the image in grayscale format and turn all of
 the bright pixels in the image to a
 light gray colour. In other words, mask the bright pixels that have
 a pixel value greater than, say, 192 and set their value to 192 (the
@@ -392,15 +392,15 @@ range 0-255 of an 8-bit pixel). The results should look like this:
 
 *Hint: the `cmap`, `vmin`, and `vmax` parameters of `matplotlib.pyplot.imshow`
 will be needed to display the modified image as desired. See the [Matplotlib
-documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.imshow.html) 
+documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.imshow.html)
 for more details on `cmap`, `vmin`, and `vmax`.*
 
 :::::::::::::::  solution
 
 ## Solution
 
-First, load the image file `data/sudoku.png` as a grayscale image. 
-Note we may want to create a copy of the image array to avoid modifying our original variable and 
+First, load the image file `data/sudoku.png` as a grayscale image.
+Note we may want to create a copy of the image array to avoid modifying our original variable and
 also because `imageio.v3.imread` sometimes returns a non-writeable image.
 
 ```python
@@ -467,9 +467,9 @@ red box that is drawn around the words.
 
 ![](data/board.jpg){alt='Whiteboard image'}
 
-Using `matplotlib.pyplot.imshow` 
+Using `matplotlib.pyplot.imshow`
 we can determine the coordinates of the corners of the area we wish to extract
-by hovering the mouse near the points of interest and noting the coordinates 
+by hovering the mouse near the points of interest and noting the coordinates
 (remember to run `%matplotlib widget` first if you haven't already).
 If we do that, we might settle on a rectangular
 area with an upper-left coordinate of *(135, 60)*

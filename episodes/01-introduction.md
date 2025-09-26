@@ -6,15 +6,15 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Recognise scientific questions that could be solved with image processing / computer vision.
-- Recognise morphometric problems (those dealing with the number, size, or shape of the objects in an image).
+- Explain the need for image processing and analysis in the context of biological research.
+- Explain the concept of a workflow in image processing and analysis and list common building blocks.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- What sort of scientific questions can we answer with image processing / computer vision?
-- What are morphometric problems?
+- Question 1
+- Question 2
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 

@@ -1,19 +1,19 @@
 ---
-title: Thresholding
+title: Processing and segmentation
 teaching: 60
 exercises: 50
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain what thresholding is and how it can be used.
-- Use histograms to determine appropriate threshold values to use for the thresholding process.
-- Apply simple, fixed-level binary thresholding to an image.
-- Explain the difference between using the operator `>` or the operator `<` to threshold an image represented by a NumPy array.
-- Describe the shape of a binary image produced by thresholding via `>` or `<`.
-- Explain when Otsu's method for automatic thresholding is appropriate.
-- Apply automatic thresholding to an image using Otsu's method.
-- Use the `np.count_nonzero()` function to count the number of non-zero pixels in an image.
+- Choose between semantic and instance segmentation, and detection, according to the goals of an analysis
+
+- Compare manual and algorithmic thresholding techniques with their implications for reproducibility
+
+- Identify connected pixels in images to identify objects of interest
+- Apply labeling techniques using connected components
+- Visualize labeled objects as an overlay of raw data
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -348,7 +348,7 @@ ax.set_xlim(0, 1.0)
 
 ![](fig/maize-root-cluster-histogram.png){alt='Grayscale histogram of the maize root image'}
 
-The histogram has a significant peak around 0.2 and then a broader "hill" around 0.6 followed by a 
+The histogram has a significant peak around 0.2 and then a broader "hill" around 0.6 followed by a
 smaller peak near 1.0. Looking at the grayscale image, we can identify the peak at 0.2 with the
 background and the broader peak with the foreground.
 Thus, this image is a good candidate for thresholding with Otsu's method.
@@ -356,17 +356,17 @@ The mathematical details of how this works are complicated (see
 [the scikit-image documentation](https://scikit-image.org/docs/dev/api/skimage.filters.html#threshold-otsu)
 if you are interested),
 but the outcome is that Otsu's method finds a threshold value between the two peaks of a grayscale
-histogram which might correspond well to the foreground and background depending on the data and 
+histogram which might correspond well to the foreground and background depending on the data and
 application.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
-The histogram of the maize root image may prompt questions from learners about the interpretation 
-of the peaks and the broader region around 0.6. The focus here is on the separation of background 
-and foreground pixel values. We note that Otsu's method does not work well 
-for the image with the shapes used earlier in this episode, as the foreground pixel values are more 
+The histogram of the maize root image may prompt questions from learners about the interpretation
+of the peaks and the broader region around 0.6. The focus here is on the separation of background
+and foreground pixel values. We note that Otsu's method does not work well
+for the image with the shapes used earlier in this episode, as the foreground pixel values are more
 distributed. These examples could be augmented with a discussion of unimodal, bimodal, and multimodal
-histograms. While these points can lead to fruitful considerations, the text in this episode attempts 
+histograms. While these points can lead to fruitful considerations, the text in this episode attempts
 to reduce cognitive load and deliberately simplifies the discussion.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -636,10 +636,10 @@ def enhanced_root_mass(filename, sigma):
 
     # perform binary thresholding to mask the white label and circle
     binary_mask = blurred_image < 0.95
-    
+
     # perform automatic thresholding using only the pixels with value True in the binary mask
     t = ski.filters.threshold_otsu(blurred_image[binary_mask])
-    
+
     # update binary mask to identify pixels which are both less than 0.95 and greater than t
     binary_mask = (blurred_image < 0.95) & (blurred_image > t)
 
@@ -677,7 +677,7 @@ The `&` operator above means that we have defined a logical AND statement. This 
 | False | True | False |
 | True | False | False |
 | True | True | True |
- 
+
 Knowing how to construct this kind of logical operation can be very helpful in image processing. The University of Minnesota Library's [guide to Boolean operators](https://libguides.umn.edu/BooleanOperators) is a good place to start if you want to learn more.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

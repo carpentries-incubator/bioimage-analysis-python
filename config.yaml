@@ -58,25 +58,26 @@ contact: 'marcodv93@gmail.com'
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes: 
+episodes:
 - 01-introduction.md
 - 02-image-basics.md
-- 03-skimage-images.md
-- 04-drawing.md
-- 05-creating-histograms.md
-- 06-blurring.md
-- 07-thresholding.md
-- 08-connected-components.md
-- 09-challenges.md
+- 03-reading-images.md
+- 04-image-exploration.md
+- 05-preprocessing.md
+- 06-processing-segmentation.md
+- 07-postprocessing.md
+- 08-measurements.md
+- 09-validation.md
+- 10-challenges.md
 
 # Information for Learners
-learners: 
+learners:
 
 # Information for Instructors
-instructors: 
+instructors:
 
 # Learner Profiles
-profiles: 
+profiles:
 
 # Customisation ---------------------------------------------
 #
