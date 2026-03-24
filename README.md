@@ -14,6 +14,10 @@ The original ideas and discussions in our first in-person workshop has been arch
 
 Make a suggestion or correct an error by [raising an Issue](https://github.com/carpentries-incubator/bioimage-analysis-python/issues).
 
+Please see the [CONTRIBUTING.md file](CONTRIBUTING.md) for contributing guidelines and details on how to get involved with 
+this project. Some specific guidelines for content / style are provided in the 
+['What to Contribute (This Lesson)' section](CONTRIBUTING.md#what-to-contribute-this-lesson).
+
 ## Code of Conduct
 
 All participants should agree to abide by the [The Carpentries Code of Conduct](https://carpentrieshandbook.readthedocs.io/en/latest/topic_folders/policies/code-of-conduct.html).

@@ -240,7 +240,7 @@ Suppose we are interested in this maize root cluster image.
 We want to be able to focus our program's attention on the roots themselves,
 while ignoring the black background.
 
-![](data/maize-root-cluster.jpg){alt='Root cluster image'}
+![](fig/maize-root-cluster.jpg){alt='Root cluster image'}
 
 Since the image is stored as an array of numbers,
 we can simply look through the array for pixel colour values that are
@@ -379,7 +379,7 @@ the low intensity pixels while changing the high intensity ones.
 
 The file `data/sudoku.png` is an RGB image of a sudoku puzzle:
 
-![](data/sudoku.png){alt='Su-Do-Ku puzzle'}
+![](fig/sudoku.png){alt='Su-Do-Ku puzzle'}
 
 Your task is to load the image in grayscale format and turn all of
 the bright pixels in the image to a
@@ -465,7 +465,7 @@ Consider this image of a whiteboard, and suppose that we want to create a
 sub-image with just the portion that says "odd + even = odd," along with the
 red box that is drawn around the words.
 
-![](data/board.jpg){alt='Whiteboard image'}
+![](fig/board.jpg){alt='Whiteboard image'}
 
 Using `matplotlib.pyplot.imshow`
 we can determine the coordinates of the corners of the area we wish to extract

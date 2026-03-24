@@ -68,7 +68,7 @@ fig, ax = plt.subplots()
 ax.imshow(shapes01)
 ```
 
-![](data/shapes-01.jpg){alt='Image with geometric shapes on white background' .image-with-shadow}
+![](fig/shapes-01.jpg){alt='Image with geometric shapes on white background' .image-with-shadow}
 
 Now suppose we want to select only the shapes from the image.
 In other words, we want to leave the pixels belonging to the shapes "on,"
@@ -214,7 +214,7 @@ ax.imshow(selection)
 Now, it is your turn to practice. Suppose we want to use simple thresholding
 to select only the coloured shapes (in this particular case we consider grayish to be a colour, too) from the image `data/shapes-02.jpg`:
 
-![](data/shapes-02.jpg){alt='Another image with geometric shapes on white background'}
+![](fig/shapes-02.jpg){alt='Another image with geometric shapes on white background'}
 
 First, plot the grayscale histogram as in the [Creating
 Histogram](05-creating-histograms.md) episode and
@@ -324,7 +324,7 @@ fig, ax = plt.subplots()
 ax.imshow(maize_roots)
 ```
 
-![](data/maize-root-cluster.jpg){alt='Image of a maize root'}
+![](fig/maize-root-cluster.jpg){alt='Image of a maize root'}
 
 We use Gaussian blur with a sigma of 1.0 to denoise the root image.
 Let us look at the grayscale histogram of the denoised image.
