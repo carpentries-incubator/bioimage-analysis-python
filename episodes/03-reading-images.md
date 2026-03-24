@@ -247,7 +247,7 @@ we can simply look through the array for pixel colour values that are
 less than some threshold value.
 This process is called *thresholding*,
 and we will see more powerful methods to perform the thresholding task in
-[the *Thresholding* episode](07-thresholding.md).
+[the *Thresholding* episode](06-processing-segmentation.md).
 Here, though, we will look at a simple and elegant NumPy method for thresholding.
 Let us develop a program that keeps only the pixel colour values in an image
 that have value greater than or equal to 128.

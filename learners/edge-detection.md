@@ -35,7 +35,7 @@ For example, once we have found the edges of the objects in the image
 (or once we have converted the image to binary using thresholding),
 we can use that information to find the image *contours*,
 which we will learn about in
-[the *Connected Component Analysis* episode](../episodes/08-connected-components.md).
+[the *Connected Component Analysis* episode](../episodes/06-processing-segmentation.md).
 With the contours,
 we can do things like counting the number of objects in the image,
 measure the size of the objects, classify the shapes of the objects, and so on.
@@ -126,7 +126,7 @@ The following program illustrates how the `skimage.feature.canny()` method
 can be used to detect the edges in an image.
 We will execute the program on the `data/shapes-01.jpg` image,
 which we used before in
-[the *Thresholding* episode](../episodes/07-thresholding.md):
+[the *Thresholding* episode](../episodes/06-processing-segmentation.md):
 
 ![](fig/shapes-01.jpg){alt='coloured shapes'}
 

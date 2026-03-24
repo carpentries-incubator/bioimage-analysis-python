@@ -34,7 +34,7 @@ we use thresholding as a way to select areas of interest of an image,
 while ignoring the parts we are not concerned with.
 We have already done some simple thresholding,
 in the "Manipulating pixels" section of
-[the *Working with scikit-image* episode](03-skimage-images.md).
+[the *Working with scikit-image* episode](03-reading-images.md).
 In that case, we used a simple NumPy array manipulation to
 separate the pixels belonging to the root system of a plant from the black background.
 In this episode, we will learn how to use scikit-image functions to perform thresholding.
@@ -187,7 +187,7 @@ It is worth noting that the principle for simple and automatic thresholding
 can also be used for images with pixel ranges other than [0\.0, 1.0].
 For example, we could perform thresholding on pixel intensity values
 in the range [0, 255] as we have already seen in
-[the *Working with scikit-image* episode](03-skimage-images.md).
+[the *Working with scikit-image* episode](03-reading-images.md).
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -315,7 +315,7 @@ thresholding, which can be done with one of the methods from
 
 Consider the image `data/maize-root-cluster.jpg` of a maize root system which
 we have seen before in
-[the *Working with scikit-image* episode](03-skimage-images.md).
+[the *Working with scikit-image* episode](03-reading-images.md).
 
 ```python
 maize_roots = iio.imread(uri="data/maize-root-cluster.jpg")

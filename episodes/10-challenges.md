@@ -52,8 +52,7 @@ The image should look similar to this one:
 Additionally, print out the number of colonies for each image.
 
 Use what you have learnt about [histograms](05-creating-histograms.md),
-[thresholding](07-thresholding.md) and
-[connected component analysis](08-connected-components.md).
+[thresholding and connected component analysis](06-processing-segmentation.md).
 Try to put your code into a re-usable function,
 so that it can be applied conveniently to any image file.
 
@@ -188,7 +187,7 @@ You could expand this solution to, for example,
 use an automatically determined threshold for each image,
 which may fit each better.
 Also, you could filter out colonies below a certain size
-(as we did in [the *Connected Component Analysis* episode](08-connected-components.md)).
+(as we did in [the *Connected Component Analysis* episode](06-processing-segmentation.md)).
 You'll also see that some touching colonies are merged into one big colony.
 This could be fixed with more complicated segmentation methods
 (outside of the scope of this lesson) like
