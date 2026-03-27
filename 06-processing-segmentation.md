@@ -34,7 +34,7 @@ we use thresholding as a way to select areas of interest of an image,
 while ignoring the parts we are not concerned with.
 We have already done some simple thresholding,
 in the "Manipulating pixels" section of
-[the *Working with scikit-image* episode](03-skimage-images.md).
+[the *Working with scikit-image* episode](03-reading-images.md).
 In that case, we used a simple NumPy array manipulation to
 separate the pixels belonging to the root system of a plant from the black background.
 In this episode, we will learn how to use scikit-image functions to perform thresholding.
@@ -68,7 +68,7 @@ fig, ax = plt.subplots()
 ax.imshow(shapes01)
 ```
 
-![](data/shapes-01.jpg){alt='Image with geometric shapes on white background' .image-with-shadow}
+![](fig/shapes-01.jpg){alt='Image with geometric shapes on white background' .image-with-shadow}
 
 Now suppose we want to select only the shapes from the image.
 In other words, we want to leave the pixels belonging to the shapes "on,"
@@ -187,7 +187,7 @@ It is worth noting that the principle for simple and automatic thresholding
 can also be used for images with pixel ranges other than [0\.0, 1.0].
 For example, we could perform thresholding on pixel intensity values
 in the range [0, 255] as we have already seen in
-[the *Working with scikit-image* episode](03-skimage-images.md).
+[the *Working with scikit-image* episode](03-reading-images.md).
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -214,7 +214,7 @@ ax.imshow(selection)
 Now, it is your turn to practice. Suppose we want to use simple thresholding
 to select only the coloured shapes (in this particular case we consider grayish to be a colour, too) from the image `data/shapes-02.jpg`:
 
-![](data/shapes-02.jpg){alt='Another image with geometric shapes on white background'}
+![](fig/shapes-02.jpg){alt='Another image with geometric shapes on white background'}
 
 First, plot the grayscale histogram as in the [Creating
 Histogram](05-creating-histograms.md) episode and
@@ -315,7 +315,7 @@ thresholding, which can be done with one of the methods from
 
 Consider the image `data/maize-root-cluster.jpg` of a maize root system which
 we have seen before in
-[the *Working with scikit-image* episode](03-skimage-images.md).
+[the *Working with scikit-image* episode](03-reading-images.md).
 
 ```python
 maize_roots = iio.imread(uri="data/maize-root-cluster.jpg")
@@ -324,7 +324,7 @@ fig, ax = plt.subplots()
 ax.imshow(maize_roots)
 ```
 
-![](data/maize-root-cluster.jpg){alt='Image of a maize root'}
+![](fig/maize-root-cluster.jpg){alt='Image of a maize root'}
 
 We use Gaussian blur with a sigma of 1.0 to denoise the root image.
 Let us look at the grayscale histogram of the denoised image.
@@ -383,7 +383,7 @@ print("Found automatic threshold t = {}.".format(t))
 ```
 
 ```output
-Found automatic threshold t = 0.4172454549881862.
+Found automatic threshold t = 0.4116003928683858.
 ```
 
 For this root image and a Gaussian blur with the chosen sigma of 1.0,
@@ -512,7 +512,7 @@ measure_root_mass(filename="data/trial-016.jpg", sigma=1.5)
 ```
 
 ```output
-0.0482436835106383`
+0.04907247340425532
 ```
 
 Now we can use the function to process the series of four images shown above.
@@ -525,7 +525,7 @@ and the filenames all start with the **trial-** prefix and
 end with the **.jpg** suffix.
 
 ```python
-all_files = glob.glob("data/trial-*.jpg")
+all_files = sorted(glob.glob("data/trial-*.jpg"))
 for filename in all_files:
     density = measure_root_mass(filename=filename, sigma=1.5)
     # output in format suitable for .csv
@@ -533,11 +533,19 @@ for filename in all_files:
 ```
 
 ```output
-data/trial-016.jpg,0.0482436835106383
-data/trial-020.jpg,0.06346941489361702
-data/trial-216.jpg,0.14073969414893617
-data/trial-293.jpg,0.13607895611702128
+data/trial-016.jpg,0.04907247340425532
+data/trial-020.jpg,0.06381366356382978
+data/trial-216.jpg,0.14205152925531914
+data/trial-293.jpg,0.13665791223404256
 ```
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+Compare your results with the values above. Do they match exactly? You may find that certain decimal values differ slightly, even when using identical input parameters.
+
+This variation often stems from the specific versions of your installed packages (such as `numpy` or `scikit-image`). As these libraries evolve, updates can introduce subtle changes in numerical handling, underlying algorithms, or rounding logic. This highlights why reproducible environments, as well as reproducible code, are essential for consistent scientific computing.
+
+:::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -650,7 +658,7 @@ def enhanced_root_mass(filename, sigma):
     return density
 
 
-all_files = glob.glob("data/trial-*.jpg")
+all_files = sorted(glob.glob("data/trial-*.jpg"))
 for filename in all_files:
     density = enhanced_root_mass(filename=filename, sigma=1.5)
     # output in format suitable for .csv
@@ -661,10 +669,10 @@ The output of the improved program does illustrate that the white circles
 and labels were skewing our root mass ratios:
 
 ```output
-data/trial-016.jpg,0.046250166223404256
-data/trial-020.jpg,0.05886968085106383
-data/trial-216.jpg,0.13712117686170214
-data/trial-293.jpg,0.13190342420212767
+data/trial-016.jpg,0.046261136968085106
+data/trial-020.jpg,0.05887167553191489
+data/trial-216.jpg,0.13712067819148935
+data/trial-293.jpg,0.1319044215425532
 ```
 :::::::::::::::::::::::::::::::::::::::::: spoiler
 

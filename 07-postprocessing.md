@@ -18,12 +18,12 @@ exercises: 55
 
 ## Objects
 
-In [the *Thresholding* episode](07-thresholding.md)
+In [the *Thresholding* episode](06-processing-segmentation.md)
 we have covered dividing an image into foreground and background pixels.
 In the shapes example image,
 we considered the coloured shapes as foreground *objects* on a white background.
 
-![](data/shapes-01.jpg){alt='Original shapes image' .image-with-shadow}
+![](fig/shapes-01.jpg){alt='Original shapes image' .image-with-shadow}
 
 In thresholding we went from the original image to this version:
 
@@ -250,7 +250,7 @@ def connected_components(filename, sigma=1.0, t=0.5, connectivity=2):
 ```
 
 The first four lines of code are familiar from
-[the *Thresholding* episode](07-thresholding.md).
+[the *Thresholding* episode](06-processing-segmentation.md).
 
 <!-- Note: shapes image: with sigma=2.0, threshold=0.9 -> 11 objects; with sigma=5 -> 8 objects -->
 
@@ -489,7 +489,7 @@ So we could use a minimum area as a criterion for when an object should be detec
 To apply such a criterion,
 we need a way to calculate the area of objects found by connected components.
 Recall how we determined the root mass in
-[the *Thresholding* episode](07-thresholding.md)
+[the *Thresholding* episode](06-processing-segmentation.md)
 by counting the pixels in the binary mask.
 But here we want to calculate the area of several objects in the labeled image.
 The scikit-image library provides the function `ski.measure.regionprops`
@@ -519,7 +519,7 @@ This will produce the output
 ## Plot a histogram of the object area distribution (10 min)
 
 Similar to how we determined a "good" threshold in
-[the *Thresholding* episode](07-thresholding.md),
+[the *Thresholding* episode](06-processing-segmentation.md),
 it is often helpful to inspect the histogram of an object property.
 For example, we want to look at the distribution of the object areas.
 

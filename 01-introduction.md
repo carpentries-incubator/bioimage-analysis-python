@@ -114,7 +114,7 @@ As we move through this workshop,
 we will learn image analysis methods useful for many different scientific problems.
 These will be linked together
 and applied to a real problem in the final end-of-workshop
-[capstone challenge](09-challenges.md).
+[capstone challenge](10-challenges.md).
 
 Let's get started,
 by learning some basics about how images are represented and stored digitally.
