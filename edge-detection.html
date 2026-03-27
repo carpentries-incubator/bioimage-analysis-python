@@ -100,7 +100,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="discuss.html">Discussion</a></li><li><a class="dropdown-item" href="edge-detection.html">Extra Episode: Edge Detection</a></li><li><a class="dropdown-item" href="prereqs.html">Prerequisites</a></li><li><a class="dropdown-item" href="reference.html">Reference</a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="prereqs.html">Prerequisites</a></li><li><a class="dropdown-item" href="discuss.html">Discussion</a></li><li><a class="dropdown-item" href="reference.html">Glossary</a></li><li><a class="dropdown-item" href="further-reading.html">Further Reading</a></li><li><a class="dropdown-item" href="edge-detection.html">Extra Episode: Edge Detection</a></li>
           </ul></li>
       </ul></div>
     <!--
@@ -316,7 +316,7 @@
                       <li>
                         <a href="profiles.html">Learner Profiles</a>
                       </li>
-                      <li><a href="discuss.html">Discussion</a></li><li><a href="edge-detection.html">Extra Episode: Edge Detection</a></li><li><a href="prereqs.html">Prerequisites</a></li><li><a href="reference.html">Reference</a></li>
+                      <li><a href="prereqs.html">Prerequisites</a></li><li><a href="discuss.html">Discussion</a></li><li><a href="reference.html">Glossary</a></li><li><a href="further-reading.html">Further Reading</a></li><li><a href="edge-detection.html">Extra Episode: Edge Detection</a></li>
                     </ul></div>
                 </div>
               </div>
@@ -352,7 +352,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Extra Episode: Edge Detection</h1>
-        <p>Last updated on 2025-04-08 |
+        <p>Last updated on 2026-03-27 |
 
         <a href="https://github.com/carpentries-incubator/bioimage-analysis-python/edit/main/learners/edge-detection.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -401,7 +401,7 @@ helpful, while ignoring parts of the image that will not help us.</p>
 <p>For example, once we have found the edges of the objects in the image
 (or once we have converted the image to binary using thresholding), we
 can use that information to find the image <em>contours</em>, which we
-will learn about in <a href="08-connected-components.html">the
+will learn about in <a href="06-processing-segmentation.html">the
 <em>Connected Component Analysis</em> episode</a>. With the contours, we
 can do things like counting the number of objects in the image, measure
 the size of the objects, classify the shapes of the objects, and so
@@ -469,8 +469,9 @@ image(s) to be processed.</p>
 <p>The following program illustrates how the
 <code>skimage.feature.canny()</code> method can be used to detect the
 edges in an image. We will execute the program on the
-<code>data/shapes-01.jpg</code> image, which we used before in <a href="07-thresholding.html">the <em>Thresholding</em> episode</a>:</p>
-<figure><img src="data/shapes-01.jpg" alt="coloured shapes" class="figure mx-auto d-block"></figure><p>We are interested in finding the edges of the shapes in the image,
+<code>data/shapes-01.jpg</code> image, which we used before in <a href="06-processing-segmentation.html">the <em>Thresholding</em>
+episode</a>:</p>
+<figure><img src="fig/shapes-01.jpg" alt="coloured shapes" class="figure mx-auto d-block"></figure><p>We are interested in finding the edges of the shapes in the image,
 and so the colours are not important. Our strategy will be to read the
 image as grayscale, and then apply Canny edge detection. Note that when
 reading the image with <code>iio.imread(..., mode="L")</code> the image
@@ -549,7 +550,7 @@ generally are determined empirically, based on the contents of the
 image(s) to be processed.</p>
 <p>Here is an image of some glass beads that we can use as input into a
 Canny edge detection program:</p>
-<figure><img src="data/beads.jpg" alt="Beads image" class="figure mx-auto d-block"></figure><p>We could use the <code>code/edge-detection/CannyEdge.py</code>
+<figure><img src="fig/beads.jpg" alt="Beads image" class="figure mx-auto d-block"></figure><p>We could use the <code>code/edge-detection/CannyEdge.py</code>
 program above to find edges in this image. To find acceptable values for
 the thresholds, we would have to run the program over and over again,
 trying different threshold values and examining the resulting image,
@@ -718,7 +719,7 @@ achieve similar results with other threshold values.</p>
 similar situation. Consider this image of a collection of maize
 seedlings, and suppose we wish to use simple fixed-level thresholding to
 mask out everything that is not part of one of the plants.</p>
-<figure><img src="data/maize-roots-grayscale.jpg" alt="Maize roots image" class="figure mx-auto d-block"></figure><p>To perform the thresholding, we could first create a histogram, then
+<figure><img src="fig/maize-roots-grayscale.jpg" alt="Maize roots image" class="figure mx-auto d-block"></figure><p>To perform the thresholding, we could first create a histogram, then
 examine it, and select an appropriate threshold value. Here, however,
 let us create an application with a slider to set the threshold value.
 Create a program that reads in the image, displays it in a window with a
@@ -874,8 +875,8 @@ function and adding them to the plugin.</li>
   "url": "https://carpentries-incubator.github.io/bioimage-analysis-python/edge-detection.html",
   "identifier": "https://carpentries-incubator.github.io/bioimage-analysis-python/edge-detection.html",
   "dateCreated": "2025-04-08",
-  "dateModified": "2025-04-08",
-  "datePublished": "2026-03-24"
+  "dateModified": "2026-03-27",
+  "datePublished": "2026-03-27"
 }
 
   </script><script>

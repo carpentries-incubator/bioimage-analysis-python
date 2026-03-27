@@ -100,7 +100,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><hr><li><a class="dropdown-item" href="discuss.html">Discussion</a></li><li><a class="dropdown-item" href="edge-detection.html">Extra Episode: Edge Detection</a></li><li><a class="dropdown-item" href="prereqs.html">Prerequisites</a></li><li><a class="dropdown-item" href="reference.html">Reference</a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><hr><li><a class="dropdown-item" href="prereqs.html">Prerequisites</a></li><li><a class="dropdown-item" href="discuss.html">Discussion</a></li><li><a class="dropdown-item" href="reference.html">Glossary</a></li><li><a class="dropdown-item" href="further-reading.html">Further Reading</a></li><li><a class="dropdown-item" href="edge-detection.html">Extra Episode: Edge Detection</a></li>
           </ul></li>
       </ul></div>
     <!--
@@ -330,7 +330,7 @@
                       <li>
                         <a href="../instructor/images.html">Extract All Images</a>
                       </li>
-                      <hr><li><a class="dropdown-item" href="discuss.html">Discussion</a></li><li><a class="dropdown-item" href="edge-detection.html">Extra Episode: Edge Detection</a></li><li><a class="dropdown-item" href="prereqs.html">Prerequisites</a></li><li><a class="dropdown-item" href="reference.html">Reference</a></li>
+                      <hr><li><a class="dropdown-item" href="prereqs.html">Prerequisites</a></li><li><a class="dropdown-item" href="discuss.html">Discussion</a></li><li><a class="dropdown-item" href="reference.html">Glossary</a></li><li><a class="dropdown-item" href="further-reading.html">Further Reading</a></li><li><a class="dropdown-item" href="edge-detection.html">Extra Episode: Edge Detection</a></li>
                     </ul></div>
                 </div>
               </div>
@@ -366,7 +366,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Post-processing with filters</h1>
-        <p>Last updated on 2025-10-15 |
+        <p>Last updated on 2026-03-27 |
 
         <a href="https://github.com/carpentries-incubator/bioimage-analysis-python/edit/main/episodes/07-postprocessing.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -404,12 +404,12 @@ to improve objects segmentation for later measurements</li>
 </div>
 </div>
 <section><h2 class="section-heading" id="objects">Objects<a class="anchor" aria-label="anchor" href="#objects"></a></h2>
-<hr class="half-width"><p>In <a href="07-thresholding.html">the <em>Thresholding</em>
-episode</a> we have covered dividing an image into foreground and
-background pixels. In the shapes example image, we considered the
-coloured shapes as foreground <em>objects</em> on a white
+<hr class="half-width"><p>In <a href="06-processing-segmentation.html">the
+<em>Thresholding</em> episode</a> we have covered dividing an image into
+foreground and background pixels. In the shapes example image, we
+considered the coloured shapes as foreground <em>objects</em> on a white
 background.</p>
-<figure><img src="../data/shapes-01.jpg" class="image-with-shadow figure mx-auto d-block" alt="Original shapes image"></figure><p>In thresholding we went from the original image to this version:</p>
+<figure><img src="../fig/shapes-01.jpg" class="image-with-shadow figure mx-auto d-block" alt="Original shapes image"></figure><p>In thresholding we went from the original image to this version:</p>
 <figure><img src="../fig/shapes-01-mask.png" alt="Mask created by thresholding" class="figure mx-auto d-block"></figure><p>Here, we created a mask that only highlights the parts of the image
 that we find interesting, the <em>objects</em>. All objects have pixel
 value of <code>True</code> while the background pixels are
@@ -646,7 +646,8 @@ function to perform the CCA.</p>
 <span id="cb9-12"><a href="#cb9-12" tabindex="-1"></a>                                                 connectivity<span class="op">=</span>connectivity, return_num<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb9-13"><a href="#cb9-13" tabindex="-1"></a>    <span class="cf">return</span> labeled_image, count</span></code></pre>
 </div>
-<p>The first four lines of code are familiar from <a href="07-thresholding.html">the <em>Thresholding</em> episode</a>.</p>
+<p>The first four lines of code are familiar from <a href="06-processing-segmentation.html">the <em>Thresholding</em>
+episode</a>.</p>
 <!-- Note: shapes image: with sigma=2.0, threshold=0.9 -> 11 objects; with sigma=5 -> 8 objects -->
 <p>Then we call the <code>ski.measure.label</code> function. This
 function has one positional argument where we pass the
@@ -884,17 +885,17 @@ images with the shapes, our intuition tells us that the objects should
 be of a certain size or area. So we could use a minimum area as a
 criterion for when an object should be detected. To apply such a
 criterion, we need a way to calculate the area of objects found by
-connected components. Recall how we determined the root mass in <a href="07-thresholding.html">the <em>Thresholding</em> episode</a> by
-counting the pixels in the binary mask. But here we want to calculate
-the area of several objects in the labeled image. The scikit-image
-library provides the function <code>ski.measure.regionprops</code> to
-measure the properties of labeled regions. It returns a list of
-<code>RegionProperties</code> that describe each connected region in the
-images. The properties can be accessed using the attributes of the
-<code>RegionProperties</code> data type. Here we will use the properties
-<code>"area"</code> and <code>"label"</code>. You can explore the
-scikit-image documentation to learn about other properties
-available.</p>
+connected components. Recall how we determined the root mass in <a href="06-processing-segmentation.html">the <em>Thresholding</em>
+episode</a> by counting the pixels in the binary mask. But here we want
+to calculate the area of several objects in the labeled image. The
+scikit-image library provides the function
+<code>ski.measure.regionprops</code> to measure the properties of
+labeled regions. It returns a list of <code>RegionProperties</code> that
+describe each connected region in the images. The properties can be
+accessed using the attributes of the <code>RegionProperties</code> data
+type. Here we will use the properties <code>"area"</code> and
+<code>"label"</code>. You can explore the scikit-image documentation to
+learn about other properties available.</p>
 <p>We can get a list of areas of the labeled objects as follows:</p>
 <div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -919,9 +920,10 @@ available.</p>
 <h3 class="callout-title">Plot a histogram of the object area
 distribution (10 min)</h3>
 <div class="callout-content">
-<p>Similar to how we determined a “good” threshold in <a href="07-thresholding.html">the <em>Thresholding</em> episode</a>, it is
-often helpful to inspect the histogram of an object property. For
-example, we want to look at the distribution of the object areas.</p>
+<p>Similar to how we determined a “good” threshold in <a href="06-processing-segmentation.html">the <em>Thresholding</em>
+episode</a>, it is often helpful to inspect the histogram of an object
+property. For example, we want to look at the distribution of the object
+areas.</p>
 <ol style="list-style-type: decimal"><li>Create and examine a <a href="05-creating-histograms.html">histogram</a> of the object areas
 obtained with <code>ski.measure.regionprops</code>.</li>
 <li>What does the histogram tell you about the objects?</li>
@@ -1316,8 +1318,8 @@ label.</li>
   "url": "https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/07-postprocessing.html",
   "identifier": "https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/07-postprocessing.html",
   "dateCreated": "2025-04-08",
-  "dateModified": "2025-10-15",
-  "datePublished": "2026-03-24"
+  "dateModified": "2026-03-27",
+  "datePublished": "2026-03-27"
 }
 
   </script><script>

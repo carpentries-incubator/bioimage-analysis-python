@@ -124,10 +124,11 @@
           </button>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 <hr>
-<li><a class="dropdown-item" href="discuss.html">Discussion</a></li>
-<li><a class="dropdown-item" href="edge-detection.html">Extra Episode: Edge Detection</a></li>
 <li><a class="dropdown-item" href="prereqs.html">Prerequisites</a></li>
-<li><a class="dropdown-item" href="reference.html">Reference</a></li>
+<li><a class="dropdown-item" href="discuss.html">Discussion</a></li>
+<li><a class="dropdown-item" href="reference.html">Glossary</a></li>
+<li><a class="dropdown-item" href="further-reading.html">Further Reading</a></li>
+<li><a class="dropdown-item" href="edge-detection.html">Extra Episode: Edge Detection</a></li>
           </ul>
 </li>
       </ul>
@@ -390,10 +391,11 @@
                         <a href="../instructor/images.html">Extract All Images</a>
                       </li>
                       <hr>
-<li><a class="dropdown-item" href="discuss.html">Discussion</a></li>
-<li><a class="dropdown-item" href="edge-detection.html">Extra Episode: Edge Detection</a></li>
 <li><a class="dropdown-item" href="prereqs.html">Prerequisites</a></li>
-<li><a class="dropdown-item" href="reference.html">Reference</a></li>
+<li><a class="dropdown-item" href="discuss.html">Discussion</a></li>
+<li><a class="dropdown-item" href="reference.html">Glossary</a></li>
+<li><a class="dropdown-item" href="further-reading.html">Further Reading</a></li>
+<li><a class="dropdown-item" href="edge-detection.html">Extra Episode: Edge Detection</a></li>
                     </ul>
 </div>
                 </div>
@@ -425,7 +427,7 @@
         
 <section id="aio-01-introduction"><p>Content from <a href="01-introduction.html">Introduction</a></p>
 <hr>
-<p>Last updated on 2025-10-15 |
+<p>Last updated on 2026-03-27 |
 
         <a href="https://github.com/carpentries-incubator/bioimage-analysis-python/edit/main/episodes/01-introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 5 minutes</p>
@@ -552,7 +554,7 @@ tools for scientific research.</p>
 <p>As we move through this workshop, we will learn image analysis
 methods useful for many different scientific problems. These will be
 linked together and applied to a real problem in the final
-end-of-workshop <a href="09-challenges.html">capstone challenge</a>.</p>
+end-of-workshop <a href="10-challenges.html">capstone challenge</a>.</p>
 <p>Let’s get started, by learning some basics about how images are
 represented and stored digitally.</p>
 <div id="keypoints1" class="callout keypoints">
@@ -814,7 +816,7 @@ modules. You will encounter several different forms of
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Further explanation </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>In the example above, form 1 loads the entire scikit-image library
 into the program as an object. Individual modules of the library are
@@ -987,7 +989,7 @@ image and print out the matrix as well.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>There are many possible solutions, but one method would be . . .</p>
 <div class="codewrapper sourceCode" id="cb12">
@@ -1224,7 +1226,7 @@ further.)</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>(255, 0, 0) represents red, because the red channel is maximised,
@@ -1272,7 +1274,7 @@ RGB model?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>There are 24 total bits in an RGB colour of this type, and each bit
 can be on or off, and so there are 2<sup>24</sup> = 16,777,216 possible
@@ -1448,7 +1450,7 @@ how much storage would be required for the file?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>In such an image, there are 5,000 × 5,000 = 25,000,000 pixels, and 24
 bits for each pixel, leading to 25,000,000 × 24 = 600,000,000 bits, or
@@ -1554,7 +1556,7 @@ prediction? How about the JPEG?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>The BMP file, <code>ws.bmp</code>, is 75,000,054 bytes, which matches
 our prediction very nicely. The JPEG file, <code>ws.jpg</code>, is
@@ -1600,7 +1602,7 @@ conclude from the relative sizes?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <p>Here is a partial directory listing, showing the sizes of the
 relevant files there:</p>
@@ -1830,7 +1832,7 @@ information may be stored in an image file, in the image metadata.</li>
 </div>
 </section></section><section id="aio-03-reading-images"><p>Content from <a href="03-reading-images.html">Reading Images</a></p>
 <hr>
-<p>Last updated on 2025-10-15 |
+<p>Last updated on 2026-03-27 |
 
         <a href="https://github.com/carpentries-incubator/bioimage-analysis-python/edit/main/episodes/03-reading-images.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 120 minutes</p>
@@ -2066,7 +2068,7 @@ if it is configured so.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Here is what your Python script might look like.</p>
 <div class="codewrapper sourceCode" id="cb6">
@@ -2110,15 +2112,16 @@ example.</p>
 <p>Suppose we are interested in this maize root cluster image. We want
 to be able to focus our program’s attention on the roots themselves,
 while ignoring the black background.</p>
-<figure><img src="../data/maize-root-cluster.jpg" alt="Root cluster image" class="figure mx-auto d-block"></figure><p>Since the image is stored as an array of numbers, we can simply look
+<figure><img src="../fig/maize-root-cluster.jpg" alt="Root cluster image" class="figure mx-auto d-block"></figure><p>Since the image is stored as an array of numbers, we can simply look
 through the array for pixel colour values that are less than some
 threshold value. This process is called <em>thresholding</em>, and we
-will see more powerful methods to perform the thresholding task in <a href="07-thresholding.html">the <em>Thresholding</em> episode</a>. Here,
-though, we will look at a simple and elegant NumPy method for
-thresholding. Let us develop a program that keeps only the pixel colour
-values in an image that have value greater than or equal to 128. This
-will keep the pixels that are brighter than half of “full brightness”,
-i.e., pixels that do not belong to the black background.</p>
+will see more powerful methods to perform the thresholding task in <a href="06-processing-segmentation.html">the <em>Thresholding</em>
+episode</a>. Here, though, we will look at a simple and elegant NumPy
+method for thresholding. Let us develop a program that keeps only the
+pixel colour values in an image that have value greater than or equal to
+128. This will keep the pixels that are brighter than half of “full
+brightness”, i.e., pixels that do not belong to the black
+background.</p>
 <p>We will start by reading the image and displaying it.</p>
 <div id="loading-images-with-imageio-read-only-arrays" class="callout">
 <div class="callout-square">
@@ -2284,7 +2287,7 @@ opposite - keeping all the low intensity pixels while changing the high
 intensity ones.</p>
 <p>The file <code>data/sudoku.png</code> is an RGB image of a sudoku
 puzzle:</p>
-<figure><img src="../data/sudoku.png" alt="Su-Do-Ku puzzle" class="figure mx-auto d-block"></figure><p>Your task is to load the image in grayscale format and turn all of
+<figure><img src="../fig/sudoku.png" alt="Su-Do-Ku puzzle" class="figure mx-auto d-block"></figure><p>Your task is to load the image in grayscale format and turn all of
 the bright pixels in the image to a light gray colour. In other words,
 mask the bright pixels that have a pixel value greater than, say, 192
 and set their value to 192 (the value 192 is chosen here because it
@@ -2303,7 +2306,7 @@ documentation</a> for more details on <code>cmap</code>,
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>First, load the image file <code>data/sudoku.png</code> as a
 grayscale image. Note we may want to create a copy of the image array to
@@ -2380,7 +2383,7 @@ manipulations.</p>
 <p>Consider this image of a whiteboard, and suppose that we want to
 create a sub-image with just the portion that says “odd + even = odd,”
 along with the red box that is drawn around the words.</p>
-<figure><img src="../data/board.jpg" alt="Whiteboard image" class="figure mx-auto d-block"></figure><p>Using <code>matplotlib.pyplot.imshow</code> we can determine the
+<figure><img src="../fig/board.jpg" alt="Whiteboard image" class="figure mx-auto d-block"></figure><p>Using <code>matplotlib.pyplot.imshow</code> we can determine the
 coordinates of the corners of the area we wish to extract by hovering
 the mouse near the points of interest and noting the coordinates
 (remember to run <code>%matplotlib widget</code> first if you haven’t
@@ -2462,7 +2465,7 @@ from “data/maize-root-cluster.jpg”</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Here is the completed Python program to select only the plant and
 roots in the image.</p>
@@ -2636,7 +2639,7 @@ curriculum<a class="anchor" aria-label="anchor" href="#this-is-a-new-episode-tha
 <code>06-blurring.md</code>.</p>
 </section></section><section id="aio-06-processing-segmentation"><p>Content from <a href="06-processing-segmentation.html">Processing and segmentation</a></p>
 <hr>
-<p>Last updated on 2025-10-15 |
+<p>Last updated on 2026-03-27 |
 
         <a href="https://github.com/carpentries-incubator/bioimage-analysis-python/edit/main/episodes/06-processing-segmentation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 110 minutes</p>
@@ -2683,7 +2686,7 @@ colour or grayscale into a <em>binary image</em>, i.e., one that is
 simply black and white. Most frequently, we use thresholding as a way to
 select areas of interest of an image, while ignoring the parts we are
 not concerned with. We have already done some simple thresholding, in
-the “Manipulating pixels” section of <a href="03-skimage-images.html">the <em>Working with scikit-image</em>
+the “Manipulating pixels” section of <a href="03-reading-images.html">the <em>Working with scikit-image</em>
 episode</a>. In that case, we used a simple NumPy array manipulation to
 separate the pixels belonging to the root system of a plant from the
 black background. In this episode, we will learn how to use scikit-image
@@ -2720,7 +2723,7 @@ crudely cut shapes set against a white background.</p>
 <span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
 <span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>ax.imshow(shapes01)</span></code></pre>
 </div>
-<figure><img src="../data/shapes-01.jpg" class="image-with-shadow figure mx-auto d-block" alt="Image with geometric shapes on white background"></figure><p>Now suppose we want to select only the shapes from the image. In
+<figure><img src="../fig/shapes-01.jpg" class="image-with-shadow figure mx-auto d-block" alt="Image with geometric shapes on white background"></figure><p>Now suppose we want to select only the shapes from the image. In
 other words, we want to leave the pixels belonging to the shapes “on,”
 while turning the rest of the pixels “off,” by setting their colour
 channel values to zeros. The scikit-image library has several different
@@ -2825,7 +2828,7 @@ definition for a good threshold that allows us to determine the value of
 simple and automatic thresholding can also be used for images with pixel
 ranges other than [0.0, 1.0]. For example, we could perform thresholding
 on pixel intensity values in the range [0, 255] as we have already seen
-in <a href="03-skimage-images.html">the <em>Working with
+in <a href="03-reading-images.html">the <em>Working with
 scikit-image</em> episode</a>.</p>
 </div>
 </div>
@@ -2857,7 +2860,7 @@ min)</h3>
 thresholding to select only the coloured shapes (in this particular case
 we consider grayish to be a colour, too) from the image
 <code>data/shapes-02.jpg</code>:</p>
-<figure><img src="../data/shapes-02.jpg" alt="Another image with geometric shapes on white background" class="figure mx-auto d-block"></figure><p>First, plot the grayscale histogram as in the <a href="05-creating-histograms.html">Creating Histogram</a> episode and
+<figure><img src="../fig/shapes-02.jpg" alt="Another image with geometric shapes on white background" class="figure mx-auto d-block"></figure><p>First, plot the grayscale histogram as in the <a href="05-creating-histograms.html">Creating Histogram</a> episode and
 examine the distribution of grayscale values in the image. What do you
 think would be a good value for the threshold <code>t</code>?</p>
 </div>
@@ -2868,7 +2871,7 @@ think would be a good value for the threshold <code>t</code>?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The histogram for the <code>data/shapes-02.jpg</code> image can be
 shown with</p>
@@ -2920,7 +2923,7 @@ a black background.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Here are the commands to create and view the binary mask</p>
 <div class="codewrapper sourceCode" id="cb8">
@@ -2974,7 +2977,7 @@ thresholding, which can be done with one of the methods from <a href="06-blurrin
 </div>
 </div>
 <p>Consider the image <code>data/maize-root-cluster.jpg</code> of a
-maize root system which we have seen before in <a href="03-skimage-images.html">the <em>Working with scikit-image</em>
+maize root system which we have seen before in <a href="03-reading-images.html">the <em>Working with scikit-image</em>
 episode</a>.</p>
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2984,7 +2987,7 @@ episode</a>.</p>
 <span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
 <span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a>ax.imshow(maize_roots)</span></code></pre>
 </div>
-<figure><img src="../data/maize-root-cluster.jpg" alt="Image of a maize root" class="figure mx-auto d-block"></figure><p>We use Gaussian blur with a sigma of 1.0 to denoise the root image.
+<figure><img src="../fig/maize-root-cluster.jpg" alt="Image of a maize root" class="figure mx-auto d-block"></figure><p>We use Gaussian blur with a sigma of 1.0 to denoise the root image.
 Let us look at the grayscale histogram of the denoised image.</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3019,7 +3022,7 @@ background depending on the data and application.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>The histogram of the maize root image may prompt questions from
 learners about the interpretation of the peaks and the broader region
@@ -3050,7 +3053,7 @@ method.</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>Found automatic threshold t = 0.4172454549881862.</code></pre>
+<pre class="output" tabindex="0"><code>Found automatic threshold t = 0.4116003928683858.</code></pre>
 </div>
 <p>For this root image and a Gaussian blur with the chosen sigma of 1.0,
 the computed threshold value is 0.42. No we can create a binary mask
@@ -3166,7 +3169,7 @@ and a sigma value of 1.5, we would call the function like this:</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>0.0482436835106383`</code></pre>
+<pre class="output" tabindex="0"><code><span><span class="fl">0.04907247340425532</span></span></code></pre>
 </div>
 <p>Now we can use the function to process the series of four images
 shown above. In a real-world scientific situation, there might be
@@ -3179,7 +3182,7 @@ the <strong>.jpg</strong> suffix.</p>
 <div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a>all_files <span class="op">=</span> glob.glob(<span class="st">"data/trial-*.jpg"</span>)</span>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a>all_files <span class="op">=</span> <span class="bu">sorted</span>(glob.glob(<span class="st">"data/trial-*.jpg"</span>))</span>
 <span id="cb19-2"><a href="#cb19-2" tabindex="-1"></a><span class="cf">for</span> filename <span class="kw">in</span> all_files:</span>
 <span id="cb19-3"><a href="#cb19-3" tabindex="-1"></a>    density <span class="op">=</span> measure_root_mass(filename<span class="op">=</span>filename, sigma<span class="op">=</span><span class="fl">1.5</span>)</span>
 <span id="cb19-4"><a href="#cb19-4" tabindex="-1"></a>    <span class="co"># output in format suitable for .csv</span></span>
@@ -3188,10 +3191,30 @@ the <strong>.jpg</strong> suffix.</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>data/trial-016.jpg,0.0482436835106383
-data/trial-020.jpg,0.06346941489361702
-data/trial-216.jpg,0.14073969414893617
-data/trial-293.jpg,0.13607895611702128</code></pre>
+<pre class="output" tabindex="0"><code>data/trial-016.jpg,0.04907247340425532
+data/trial-020.jpg,0.06381366356382978
+data/trial-216.jpg,0.14205152925531914
+data/trial-293.jpg,0.13665791223404256</code></pre>
+</div>
+<div id="callout3" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Compare your results with the values above. Do they match exactly?
+You may find that certain decimal values differ slightly, even when
+using identical input parameters.</p>
+<p>This variation often stems from the specific versions of your
+installed packages (such as <code>numpy</code> or
+<code>scikit-image</code>). As these libraries evolve, updates can
+introduce subtle changes in numerical handling, underlying algorithms,
+or rounding logic. This highlights why reproducible environments, as
+well as reproducible code, are essential for consistent scientific
+computing.</p>
+</div>
+</div>
 </div>
 <div id="ignoring-more-of-the-images-brainstorming-10-min" class="callout challenge">
 <div class="callout-square">
@@ -3223,7 +3246,7 @@ given what we have learned so far.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>One approach we might take is to try to completely mask out a region
 from each image, particularly, the area containing the white circle and
@@ -3284,7 +3307,7 @@ Otsu’s method.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>We can apply a simple binary thresholding with a threshold
 <code>t=0.95</code> to remove the label and circle from the image. We
@@ -3317,7 +3340,7 @@ pixels from the label and circle.</p>
 <span id="cb21-22"><a href="#cb21-22" tabindex="-1"></a>    <span class="cf">return</span> density</span>
 <span id="cb21-23"><a href="#cb21-23" tabindex="-1"></a></span>
 <span id="cb21-24"><a href="#cb21-24" tabindex="-1"></a></span>
-<span id="cb21-25"><a href="#cb21-25" tabindex="-1"></a>all_files <span class="op">=</span> glob.glob(<span class="st">"data/trial-*.jpg"</span>)</span>
+<span id="cb21-25"><a href="#cb21-25" tabindex="-1"></a>all_files <span class="op">=</span> <span class="bu">sorted</span>(glob.glob(<span class="st">"data/trial-*.jpg"</span>))</span>
 <span id="cb21-26"><a href="#cb21-26" tabindex="-1"></a><span class="cf">for</span> filename <span class="kw">in</span> all_files:</span>
 <span id="cb21-27"><a href="#cb21-27" tabindex="-1"></a>    density <span class="op">=</span> enhanced_root_mass(filename<span class="op">=</span>filename, sigma<span class="op">=</span><span class="fl">1.5</span>)</span>
 <span id="cb21-28"><a href="#cb21-28" tabindex="-1"></a>    <span class="co"># output in format suitable for .csv</span></span>
@@ -3328,17 +3351,17 @@ circles and labels were skewing our root mass ratios:</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>data/trial-016.jpg,0.046250166223404256
-data/trial-020.jpg,0.05886968085106383
-data/trial-216.jpg,0.13712117686170214
-data/trial-293.jpg,0.13190342420212767</code></pre>
+<pre class="output" tabindex="0"><code>data/trial-016.jpg,0.046261136968085106
+data/trial-020.jpg,0.05887167553191489
+data/trial-216.jpg,0.13712067819148935
+data/trial-293.jpg,0.1319044215425532</code></pre>
 </div>
 <div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> What is &amp; doing in the example above? </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>The <code>&amp;</code> operator above means that we have defined a
 logical AND statement. This combines the two tests of pixel intensities
@@ -3419,7 +3442,7 @@ good threshold value for the image.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>Here is the code to create the grayscale histogram:</p>
 <div class="codewrapper sourceCode" id="cb23">
@@ -3483,7 +3506,7 @@ detection or finding contours.</li>
 </div>
 </section></section><section id="aio-07-postprocessing"><p>Content from <a href="07-postprocessing.html">Post-processing with filters</a></p>
 <hr>
-<p>Last updated on 2025-10-15 |
+<p>Last updated on 2026-03-27 |
 
         <a href="https://github.com/carpentries-incubator/bioimage-analysis-python/edit/main/episodes/07-postprocessing.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 125 minutes</p>
@@ -3520,12 +3543,12 @@ to improve objects segmentation for later measurements</li>
 <section><h2 class="section-heading" id="objects">Objects<a class="anchor" aria-label="anchor" href="#objects"></a>
 </h2>
 <hr class="half-width">
-<p>In <a href="07-thresholding.html">the <em>Thresholding</em>
-episode</a> we have covered dividing an image into foreground and
-background pixels. In the shapes example image, we considered the
-coloured shapes as foreground <em>objects</em> on a white
+<p>In <a href="06-processing-segmentation.html">the
+<em>Thresholding</em> episode</a> we have covered dividing an image into
+foreground and background pixels. In the shapes example image, we
+considered the coloured shapes as foreground <em>objects</em> on a white
 background.</p>
-<figure><img src="../data/shapes-01.jpg" class="image-with-shadow figure mx-auto d-block" alt="Original shapes image"></figure><p>In thresholding we went from the original image to this version:</p>
+<figure><img src="../fig/shapes-01.jpg" class="image-with-shadow figure mx-auto d-block" alt="Original shapes image"></figure><p>In thresholding we went from the original image to this version:</p>
 <figure><img src="../fig/shapes-01-mask.png" alt="Mask created by thresholding" class="figure mx-auto d-block"></figure><p>Here, we created a mask that only highlights the parts of the image
 that we find interesting, the <em>objects</em>. All objects have pixel
 value of <code>True</code> while the background pixels are
@@ -3774,7 +3797,8 @@ function to perform the CCA.</p>
 <span id="cb9-12"><a href="#cb9-12" tabindex="-1"></a>                                                 connectivity<span class="op">=</span>connectivity, return_num<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb9-13"><a href="#cb9-13" tabindex="-1"></a>    <span class="cf">return</span> labeled_image, count</span></code></pre>
 </div>
-<p>The first four lines of code are familiar from <a href="07-thresholding.html">the <em>Thresholding</em> episode</a>.</p>
+<p>The first four lines of code are familiar from <a href="06-processing-segmentation.html">the <em>Thresholding</em>
+episode</a>.</p>
 <!-- Note: shapes image: with sigma=2.0, threshold=0.9 -> 11 objects; with sigma=5 -> 8 objects -->
 <p>Then we call the <code>ski.measure.label</code> function. This
 function has one positional argument where we pass the
@@ -4014,17 +4038,17 @@ images with the shapes, our intuition tells us that the objects should
 be of a certain size or area. So we could use a minimum area as a
 criterion for when an object should be detected. To apply such a
 criterion, we need a way to calculate the area of objects found by
-connected components. Recall how we determined the root mass in <a href="07-thresholding.html">the <em>Thresholding</em> episode</a> by
-counting the pixels in the binary mask. But here we want to calculate
-the area of several objects in the labeled image. The scikit-image
-library provides the function <code>ski.measure.regionprops</code> to
-measure the properties of labeled regions. It returns a list of
-<code>RegionProperties</code> that describe each connected region in the
-images. The properties can be accessed using the attributes of the
-<code>RegionProperties</code> data type. Here we will use the properties
-<code>"area"</code> and <code>"label"</code>. You can explore the
-scikit-image documentation to learn about other properties
-available.</p>
+connected components. Recall how we determined the root mass in <a href="06-processing-segmentation.html">the <em>Thresholding</em>
+episode</a> by counting the pixels in the binary mask. But here we want
+to calculate the area of several objects in the labeled image. The
+scikit-image library provides the function
+<code>ski.measure.regionprops</code> to measure the properties of
+labeled regions. It returns a list of <code>RegionProperties</code> that
+describe each connected region in the images. The properties can be
+accessed using the attributes of the <code>RegionProperties</code> data
+type. Here we will use the properties <code>"area"</code> and
+<code>"label"</code>. You can explore the scikit-image documentation to
+learn about other properties available.</p>
 <p>We can get a list of areas of the labeled objects as follows:</p>
 <div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -4049,9 +4073,10 @@ available.</p>
 <h3 class="callout-title">Plot a histogram of the object area
 distribution (10 min)</h3>
 <div class="callout-content">
-<p>Similar to how we determined a “good” threshold in <a href="07-thresholding.html">the <em>Thresholding</em> episode</a>, it is
-often helpful to inspect the histogram of an object property. For
-example, we want to look at the distribution of the object areas.</p>
+<p>Similar to how we determined a “good” threshold in <a href="06-processing-segmentation.html">the <em>Thresholding</em>
+episode</a>, it is often helpful to inspect the histogram of an object
+property. For example, we want to look at the distribution of the object
+areas.</p>
 <ol style="list-style-type: decimal">
 <li>Create and examine a <a href="05-creating-histograms.html">histogram</a> of the object areas
 obtained with <code>ski.measure.regionprops</code>.</li>
@@ -4482,7 +4507,7 @@ curriculum<a class="anchor" aria-label="anchor" href="#this-is-a-new-episode-tha
 </h2>
 <hr class="half-width"></section></section><section id="aio-10-challenges"><p>Content from <a href="10-challenges.html">Capstone Challenge</a></p>
 <hr>
-<p>Last updated on 2025-10-15 |
+<p>Last updated on 2026-03-27 |
 
         <a href="https://github.com/carpentries-incubator/bioimage-analysis-python/edit/main/episodes/10-challenges.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 50 minutes</p>
@@ -4541,9 +4566,9 @@ bacteria colonies are in each of these images:</p>
 bacteria colonies in each image, and for each, produce a new image that
 highlights the colonies. The image should look similar to this one:</p>
 <figure><img src="../fig/colonies-01-summary.png" alt="Sample morphometric output" class="figure mx-auto d-block"></figure><p>Additionally, print out the number of colonies for each image.</p>
-<p>Use what you have learnt about <a href="05-creating-histograms.html">histograms</a>, <a href="07-thresholding.html">thresholding</a> and <a href="08-connected-components.html">connected component analysis</a>.
-Try to put your code into a re-usable function, so that it can be
-applied conveniently to any image file.</p>
+<p>Use what you have learnt about <a href="05-creating-histograms.html">histograms</a>, <a href="06-processing-segmentation.html">thresholding and connected
+component analysis</a>. Try to put your code into a re-usable function,
+so that it can be applied conveniently to any image file.</p>
 </div>
 </div>
 </div>
@@ -4667,7 +4692,7 @@ are likely some small black spots being labelled incorrectly as
 colonies. You could expand this solution to, for example, use an
 automatically determined threshold for each image, which may fit each
 better. Also, you could filter out colonies below a certain size (as we
-did in <a href="08-connected-components.html">the <em>Connected
+did in <a href="06-processing-segmentation.html">the <em>Connected
 Component Analysis</em> episode</a>). You’ll also see that some touching
 colonies are merged into one big colony. This could be fixed with more
 complicated segmentation methods (outside of the scope of this lesson)
@@ -4748,6 +4773,20 @@ those involving morphometrics.</li>
 </div>
 </div>
 </div>
+<div id="where-to-go-from-here" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="where-to-go-from-here" class="callout-inner">
+<h3 class="callout-title">Where to go from here?</h3>
+<div class="callout-content">
+<p>Take a look at our <a href="further-reading.html">curated list of
+resources</a> for further publicly available courses, resources and
+scientific literature around image processing and more.</p>
+</div>
+</div>
+</div>
 </section></section>
 </div>
     </main>
@@ -4798,8 +4837,8 @@ those involving morphometrics.</li>
   "url": "https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/aio.html",
   "identifier": "https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/aio.html",
   "dateCreated": "2025-04-08",
-  "dateModified": "2026-03-24",
-  "datePublished": "2026-03-24"
+  "dateModified": "2026-03-27",
+  "datePublished": "2026-03-27"
 }
 
   </script><script>

@@ -73,6 +73,9 @@
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/files/cheatsheet.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/further-reading.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/images.html</loc>
   </url>
   <url>
@@ -146,6 +149,9 @@
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/edge-detection.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/further-reading.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/images.html</loc>
