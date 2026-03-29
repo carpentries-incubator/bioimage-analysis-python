@@ -18,15 +18,12 @@ This lesson became a reality thanks to the many priceless contributions of the [
 
 ## Prerequisites
 
-This lesson assumes you have a working knowledge of Python and some previous exposure to the Bash shell.
-These requirements can be fulfilled by:
+This lesson assumes you have a working knowledge of Python and some previous exposure to the Bash shell. These requirements can be fulfilled by:
 a) completing a Software Carpentry Python workshop **or**
 b) completing a Data Carpentry Ecology workshop (with Python) **and** a Data Carpentry Genomics workshop **or**
 c) independent exposure to both Python and the Bash shell.
 
-If you're unsure whether you have enough experience to participate in this workshop, please read over
-[this detailed list](learners/prereqs.md), which gives all of the functions, operators, and other concepts you will need
-to be familiar with.
+If you're unsure whether you have enough experience to participate in this workshop, please read over [this detailed list](learners/prereqs.md), which gives all of the functions, operators, and other concepts you will need to be familiar with.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

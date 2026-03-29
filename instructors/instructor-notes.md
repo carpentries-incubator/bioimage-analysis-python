@@ -4,16 +4,9 @@ title: Instructor Notes
 
 ## Estimated Timings
 
-This is a relatively new curriculum.
-The estimated timings for each episode are based on limited experience 
-and should be taken as a rough guide only.
-If you teach the curriculum,
-the Maintainers would be delighted to receive feedback with 
-information about the time that was required
-for teaching and exercises in each episode of your workshop.
+This is a relatively new curriculum. The estimated timings for each episode are based on limited experience  and should be taken as a rough guide only. If you teach the curriculum, the Maintainers would be delighted to receive feedback with  information about the time that was required for teaching and exercises in each episode of your workshop.
 
-Please [open an issue on the repository](https://github.com/datacarpentry/image-processing/issues/new/choose)
-to share your experience with the lesson Maintainers.
+Please [open an issue on the repository](https://github.com/datacarpentry/image-processing/issues/new/choose) to share your experience with the lesson Maintainers.
 
 ## Working with Jupyter notebooks
 
@@ -42,7 +35,6 @@ to share your experience with the lesson Maintainers.
     - [Cheat-sheet HTML for viewing in browser](../episodes/files/cheatsheet.html). 
     - [PDF version for printing](../episodes/files/cheatsheet.pdf).
 
-
 ## Questions from Learners
 
 ### Q: Where would I find out that coordinates are `x,y` not `r,c`?
@@ -55,8 +47,7 @@ A: It is a large image.
 
 ### Q: Are the coordinates represented `x,y` or `r,c` in the code (e.g. in `array.shape`)?
 
-A: Always `r,c` with numpy arrays, unless clearly specified otherwise - only represented `x,y` when image is displayed by a viewer.
-Take home is don't rely on it - always check!
+A: Always `r,c` with numpy arrays, unless clearly specified otherwise - only represented `x,y` when image is displayed by a viewer. Take home is don't rely on it - always check!
 
 ### Q: What if I want to increase size? How does `skimage` upsample? (image resizing)
 

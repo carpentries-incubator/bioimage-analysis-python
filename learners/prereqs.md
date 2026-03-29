@@ -12,9 +12,7 @@ These requirements can be fulfilled by:
 
 ### Bash shell skills
 
-The skill set listed below is covered in any Software Carpentry workshop, as well
-as in Data Carpentry's Genomics workshop. These skills can also be learned
-through coursework or independent learning.
+The skill set listed below is covered in any Software Carpentry workshop, as well as in Data Carpentry's Genomics workshop. These skills can also be learned through coursework or independent learning.
 
 Be able to:
 
@@ -25,9 +23,7 @@ Be able to:
 
 ### Python skills
 
-This skill set listed below is covered in both Software Carpentry's Python workshop and
-in Data Carpentry's Ecology workshop with Python. These skills can also be learned
-through coursework or independent learning.
+This skill set listed below is covered in both Software Carpentry's Python workshop and in Data Carpentry's Ecology workshop with Python. These skills can also be learned through coursework or independent learning.
 
 Be able to:
 
@@ -49,5 +45,4 @@ The following skills are useful, but not required:
 - Apply a function to an entire NumPy array or to a single array axis.
 - Write a user-defined function.
 
-If you are signed up, or considering signing up for a workshop, and aren't sure whether you meet these reqirements, please
-get in touch with the workshop instructors or host.
+If you are signed up, or considering signing up for a workshop, and aren't sure whether you meet these reqirements, please get in touch with the workshop instructors or host.

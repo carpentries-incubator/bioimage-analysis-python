@@ -16,9 +16,7 @@ Make a suggestion or correct an error by [raising an Issue](https://github.com/c
 
 We are currently in the pre-alpha phase and are actively developing [the learning outcomes assessment](https://carpentries.github.io/lesson-development-training/fig/cldt-design-process.svg). Although all suggestions are welcome, major contributions should be focused on the current development phase.
 
-Please see the [CONTRIBUTING.md file](CONTRIBUTING.md) for contributing guidelines and details on how to get involved with 
-this project. Some specific guidelines for content / style are provided in the 
-['What to Contribute (This Lesson)' section](CONTRIBUTING.md#what-to-contribute-this-lesson).
+Please see the [CONTRIBUTING.md file](CONTRIBUTING.md) for contributing guidelines and details on how to get involved with  this project. Some specific guidelines for content / style are provided in the  ['What to Contribute (This Lesson)' section](CONTRIBUTING.md#what-to-contribute-this-lesson).
 
 ## Code of Conduct
 
@@ -34,6 +32,7 @@ The Bio-Image Analysis with Python lesson is currently being maintained by:
 The lesson is built on the original [Image Processing with Python](https://github.com/datacarpentry/image-processing) lesson content originally developed by [Mark Meysenburg](https://github.com/mmeysenburg), [Tessa Durham Brooks](https://github.com/tessalea), [Dominik Kutra](https://github.com/k-dominik), [Constantin Pape](https://github.com/constantinpape), and [Erin Becker](https://github.com/ebecker).
 
 ## Acknowledgements
+
 ![](https://avatars.githubusercontent.com/u/165169315?s=200&v=4)
 
 This lesson became a reality thanks to the many priceless contributions of the [GloBIAS expert community](https://www.globias.org/home). Learn [here](https://www.globias.org/activities/update-the-data-carpentries-bioimage-analysis-with-python-curriculum) how the whole initative started.
