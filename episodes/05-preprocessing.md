@@ -8,7 +8,6 @@ exercises: 50
 
 - Apply histogram normalization and equalization to facilitate downstream image segmentation
 - Choose when normalization and equalization is appropriate (batch normalization of intensities)
-
 - Explain the concept of a filter and its effects on the image data (theoretical explanation of kernels)
 - Define the concept of noise and background in images
 - Apply techniques like gaussian, mean or median filtering to remove noise from an image
