@@ -23,10 +23,85 @@ exercises: 50
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::::::::::::: challenge
+
+## Semantic segmentation, instance segmentation or object detection? (10 min)
+
+Individually or in small groups, discuss and argument which approach (_semantic segmentation_, _instance segmentation_ or _object detection_) is more appropriate for the following scenarios.
+
+### Scenario 1
+
+> You work for a toy manufacturing company and need to process multiple images of your newest product: glass marbles. Your goal is to **count the total number of marbles** in each image and **determine how many are blue**.
+
+![A sample image of the manufactured marbles.](fig/beads.jpg){alt='Image with different colored glass marbles'}
+
+
+### Scenario 2
+
+> To contribute to the development of the newest generation of autonomous apple-picking robots, you are given access to the image feed of a testing robot in the orchard field looking for apples to pick up with its robotic arms. From these images the robot needs **precise spatial coordinates of where each apple is** to move its arms to the correct position and harvest the apple.
+
+<!-- wikimedia commons image CC0 license -->
+![A sample image feed of an apple-picking robot.](https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tree_with_red_apples_in_Barkedal_4.jpg/960px-Tree_with_red_apples_in_Barkedal_4.jpg){alt='Image of an orchard with apple trees with many hanging apples'}
+
+
+### Scenario 3
+
+> In order to estimate bacteria growth rate from a series standardized tests, you are asked to evaluate **the fraction of agar plate in an image covered by bacterial colonies**.
+
+![A sample image of bacterial colonies growing on an agar plate.](fig/colonies-03.jpg){alt='Image of an agar plate with bacterial colonies'}
+
+### Scenario 4
+
+> To help improving a jigsaw puzzle solving algorithm, you need to be able to count **how many triangular shapes are present** in a benchmarking image.
+
+![A sample image of different shapes.](fig/shapes-01.jpg){alt='Image with different colored paper shapes'}
+
+### Scenario 5
+
+> Your local history museum has asked you to help them to sort through their vast coin collection. They are particularly interested in **the size and diameter of each coin** for each image.
+
+<!-- wikimedia commons image CC0 license -->
+![A sample picture of the museum coin collection.](https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/France_-_coins_5_centimes.jpg/960px-France_-_coins_5_centimes.jpg){alt='Image of several historical coins layed next to each other'}
+
+:::::::::::::::  solution
+
+## Solution
+
+### Scenario 1
+
+- This scenario could be solved with two different object detection approaches. A general one to detect all marbles in the image, and more specific method to detect only the blue marbles.
+- A semantic segmentation approach would only tell us _what is a marble_ and _what is not a marble_ in the image.
+- An instance segmentation approach would tell us _which segments in the image are belonging to each marble_.
+
+### Scenario 2
+
+In this case the robot will need precise localization of each apple, even when touching or one ontop of the other. We will need precise instance segmentation of each apple for this task.
+
+### Scenario 3
+
+In this case we only want to evaluate what is bacteria and what is agar or background. This sounds like a perfect fit for semantic segmentation.
+
+### Scenario 4
+
+This sounds like a good case of object detection: we only want to detect and count triangular shapes and ignore the rest.
+
+### Scenario 5
+
+In order to calculate the diameter and size of each coin in this image we need to determine which groups of pixels belong to the same coins (and not the background). Only instance segmentation of each coin can give us this information.
+
+:::::::::::::::
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Image segmentation
+
 In this episode, we will learn how to use scikit-image functions to apply
 thresholding to an image.
 Thresholding is a type of *image segmentation*,
-where we change the pixels of an image to make the image easier to analyze.
+where an image is split into different regions, or *segments*.
+These segments can then be analyzed separately.
+
 In thresholding, we convert an image from colour or grayscale into
 a *binary image*, i.e., one that is simply black and white.
 Most frequently,
