@@ -37,3 +37,31 @@ exercises: 50
 ## This is a new episode that didn't exist in the original curriculum
 
 It could take content both from `04-drawing.md` and `05-creating-histograms.md`.
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::: challenge
+
+### Excercise description (X min)
+
+This is an excercise template. Describe here the assignment of the excercise.
+
+
+:::::::::::::::  solution
+
+Provide the code that solves the assignment
+
+```python
+""" This is the excercise code """
+a = 1
+b = 2
+print(a + b)
+```
+
+```output
+3
+```
+
+:::::::::::::::
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
