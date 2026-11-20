@@ -4,9 +4,82 @@ teaching: 20
 exercises: 5
 ---
 
+:::::::::::::::::::::::::::::::::::::::::::::::::: challenge
+
+## Images as Matrix (15 min)
+
+Together load [this image](./data/RGB.tif) and explore the data shape, type, minimum and maximum. Then in groups open [this](./data/8bit.tif) and [this](./data/16bit.tif) file. What differences do you see in the data type, shape and the data itself?
+
+Lets explore a bit more the 8 bit and 16 bit images. Try to access only data from specific part of the array. What difference can you notice in different channels and differetn Z planes? What is the implication for analysis?
+
+### Solution #1
+
+```python
+from bioio import BioImage
+import numpy as np
+
+img = BioImage("data/RGB.tif") #or other example data
+imgdata = img.data
+shape = img.shape
+dtype = img.dtype
+dimensions = img.dims
+minimum = np.min(imgdata)
+maximum = np.max(imgdata)
+mean = np.mean(imgdata)
+print (f"Image shape is: {shape}, type is: {dtype}, Min: {minimum}, Max: {maximum}, Mean: {mean} ")
+print(f"Dimensions of the shape are: {dimensions}")
+
+```
+
+Typically, images are not matrixes as they have more han 2 dimensions. The shape represents different dimensions of the loaded image (array of matrixes). In BioIO library used in this course the numbers represent time, channels, Z-planes,Y and X pixel count (T, C, Z, Y, X respectively) and in case of RGB image also specific color components of the image stored as S. In some specific proprietary fileformats you can find additional dimensions, in that case refer to the respective documentation at [BioIO](https://bioio-devs.github.io/bioio/OVERVIEW.html) and explore the metadata as indicated in [Episode 03](03-reading-images.md). The data type (dtype) is reffering to maximum capacity for data to be stored in memory expressed as values from 0 to 2 to the power of 8 or 16 for 8 and 16 bit respectively. You can notice that by accessing only the image you can get an overall overview of the structure of the array you are working with (how many and which axes).
+
+### Solution #2
+
+```python
+from bioio import BioImage
+import numpy as np
+
+img = BioImage("data/8bit.tif") # or data/16bit.tif
+dimensions = img.dims
+print(f"Dimensions of the shape are: {dimensions}")
+
+C1 = img.data[:,0,:,:,:] #explore different channels
+minimum = np.min(C1)
+maximum = np.max(C1)
+mean = np.mean(C1)
+print (f"Channel 1 has following intensities: Min: {minimum}, Max: {maximum}, Mean: {mean} ")
+
+Z7 = img.data[:,0,6,:,:] #explore different Z planes
+minimum = np.min(Z7)
+maximum = np.max(Z7)
+mean = np.mean(Z7)
+print (f"7th Z plane of channel 1 has following intensitie: Min: {minimum}, Max: {maximum}, Mean: {mean} ")
+
+```
+
+By accessing just specific parts of the whole array, you can significantly reduce number of operations needed for any analysis. Specifically, the information you will be extracting from the data is much more focused on a specific question rather than a general overview of your data. This is very useful in answering a conrete analytical question. 
+
+The implication of bit depth is visible in two layers. On the side of the data itself you are getting higher intensities range and thus greater intensity (gray values) precission. This can be very useful, however does not necessarily mean there is more relevant information to be extracted.  On the other hand, 16 bit image is much bigger in size and will take longer to load into memmory which can result in higher computational load. To ilustrate this, try loading [this](./data/16bitcut.tif) and [this](./data/8bitcut.tif) files and inspect the full arrays. 
+
+```python
+from bioio import BioImage
+import numpy as np
+
+cut = BioImage("data/8bitcut.tif") # or data/16bitcut.tif
+dimensions = cut.dims
+print(f"Dimensions of the shape are: {dimensions}")
+cutdata = cut.data #explore how the array changes when you access just parts of the dimensions
+cutdata
+
+```
+
+While accessing the whole array or just some dimensions, you will notice differences in the range of numbers. This can reflect the memmory load which can have implications for downstream computations (e.g. in respect of normalization, averaging etc.). However, this also allows you to treat each channel or Z-plane separately, which gives your analysis an experimental relevance.
+
+
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Describe the main differences between typical fluorescence bioimages and scientific (like histological staining) and non-scientific (like camera pictures) RGB images. - Explain how some aspects of image origin and formation can influence downstream analysis.
+- Describe the main differences between typical fluorescence bioimages and scientific (like histological staining) and non-scientific (like camera pictures) RGB images.
+- Explain how some aspects of image origin and formation can influence downstream analysis.
 
 - Load images into Python represented as n-dimensional arrays via BioIO
 - Display pixel values from a NumPy array
